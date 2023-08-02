@@ -165,9 +165,21 @@ There was 40% of gals who took the vaccine and got covid19. 2% of gals who took 
 
 
 
+## Female Inferential Results
 
 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+galsfish <- fisher.test(table1)
+galsfish
+```
+
+
+
+
+In the chi test our p value is 3e-04. We know 213 females were given the placebo and got covid19. In the fishers test our p value is 2e-04 and the odd ratio is 1.5. The confidence interval is 1.2 1.9. 
 
 
 
