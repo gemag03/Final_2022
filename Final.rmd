@@ -103,6 +103,29 @@ Our p value is 4.631e-14 and our odds ratio is 2.242522 for the count data.0.51%
 
 
 
+```{r}
+effect <- guysfish$p.value/(guysfish$p.value +1)
+effectivenessguy = guysfish$estimate/(guysfish$estimate +1)*100
+print(effectivenessguy)
+```
+
+
+
+```{r}
+low=(guysfish$conf.int[1]/(guysfish$conf.int[1] +1))*100
+hi=(guysfish$conf.int[2]/(guysfish$conf.int[2] +1))*100
+options(digits=2)
+```
+
+
+
+
+The hi value is around 73.76 and the low value is around 64.26. The effectiveness of the vaccine is 69.2 Which is above 50% and shows it is effective in protecting guys from getting covid19. 
+
+
+
+
+
 
 
 
