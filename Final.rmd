@@ -84,6 +84,24 @@ We see that 69.57% of males who took the placebo got covid19. Those who took the
 
 
 
+##Males Inferential Results
+
+
+
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+guysfish <- fisher.test(table1)
+guysfish
+```
+
+
+
+
+Our p value is 4.631e-14 and our odds ratio is 2.242522 for the count data.0.51% of men got the placebo and were okay. 
+
+
 
 
 
