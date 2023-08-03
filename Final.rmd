@@ -316,6 +316,25 @@ Less than a quarter of drug users got covid19 when taking the placebo.About 50 %
 
 
 
+## Druggies Numerical Results
+
+
+
+```{r}
+table1 <- xtabs(~infected + treatment, data= DrugUser)
+rowPerc(table1)
+colPerc(table1)
+```
+
+
+
+
+The total is 100. 88 drugusers got the vaccine and contracted covid19. 99.6% of drugusers got the placebo and were okay. 96.9% got the vaccine and were okay.
+
+
+
+
+
 
 
 # Overall Results and Conclusions
