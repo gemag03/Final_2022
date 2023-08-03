@@ -353,8 +353,24 @@ For the chi squared test the p value is 3e-09. 1763 druggies were given the plac
 
 
 
+```{r}
+effect <- drugfish$p.value/(drugfish$p.value +1)
+effectivenessdrug = drugfish$estimate/(drugfish$estimate +1)*100
+print(effectivenessdrug)
+```
 
 
+
+```{r}
+low=(drugfish$conf.int[1]/(drugfish$conf.int[1] +1))*100
+hi=(drugfish$conf.int[2]/(drugfish$conf.int[2] +1))*100
+options(digits=2)
+```
+
+
+
+
+The hi value is around 21.82 and the low value is around 4.60. The effectiveness of the vaccine on drugusers is 11.2%. Since it is less than 50%, it means it was not effective to drugusers. The odds ratio is 11. 
 
 
 
